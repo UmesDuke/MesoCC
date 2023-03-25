@@ -70,6 +70,7 @@ namespace MesoCC
 
         private void button2_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("No hay datos guardados!...");
             OcultarSubMenu();
         }
 
