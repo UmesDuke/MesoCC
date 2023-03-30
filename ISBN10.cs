@@ -51,6 +51,10 @@ namespace MesoCC
             {
                 if (index >= b.Length)
                 {
+                    if (d == 10)
+                    {
+                        return buff.Append('x').ToString();
+                    }
                     return buff.Append(d).ToString();
                 }
                 buff.Append(b[index++]);
