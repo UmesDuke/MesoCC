@@ -58,6 +58,13 @@
     <Compile Include="ISBN10.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QR.cs" />
+    <Compile Include="TesterCarne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TesterCarne.Designer.cs">
+      <DependentUpon>TesterCarne.cs</DependentUpon>
+    </Compile>
     <Compile Include="ValidarCarne.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +83,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TesterCarne.resx">
+      <DependentUpon>TesterCarne.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ValidarCarne.resx">
       <DependentUpon>ValidarCarne.cs</DependentUpon>
     </EmbeddedResource>
