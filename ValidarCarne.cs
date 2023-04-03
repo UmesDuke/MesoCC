@@ -59,6 +59,9 @@ namespace MesoCC
 
         private void button1_Click(object sender, EventArgs e)
         {
+            label3.Text = null;
+            pictureBox1.Image = null;
+
             string val = this.textBox1.Text.Trim();
             if (!IsCarneValido(val))
             {

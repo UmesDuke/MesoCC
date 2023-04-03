@@ -88,6 +88,7 @@
             // 
             // buttonDBCarne
             // 
+            this.buttonDBCarne.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonDBCarne.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonDBCarne.FlatAppearance.BorderSize = 0;
             this.buttonDBCarne.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -105,6 +106,7 @@
             // 
             // buttonValidarCarne
             // 
+            this.buttonValidarCarne.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonValidarCarne.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonValidarCarne.FlatAppearance.BorderSize = 0;
             this.buttonValidarCarne.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

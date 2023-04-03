@@ -13,16 +13,25 @@ namespace MesoCC
 {
     internal class QR
     {
+
+        private string randText;
+        private Image randImage;
+
+        public string RandText { get => randText; }
+        public Image RandImage { get => randImage; }
+
         public QR() { }
 
-        public Image RandQR()
+        public void RandQR()
         {
             StringBuilder buff = new StringBuilder();
             buff.Append(IntRand(0, DateTime.Now.Year));
-            buff.Append(IntRand(10, 99));
-            buff.Append(IntRand(100, 99));
-            buff.Append(IntRand(1000, 999));
-            return GenerarQR(buff.ToString());
+            buff.Append(IntRand(0, 9));
+            buff.Append(IntRand(0, 100));
+            buff.Append(IntRand(0, 99));
+
+            this.randText = buff.ToString();
+            this.randImage = GenerarQR(buff.ToString());
         }
 
         private int IntRand(int min, int max)

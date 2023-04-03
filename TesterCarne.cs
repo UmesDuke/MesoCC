@@ -22,7 +22,10 @@ namespace MesoCC
 
         private void button1_Click(object sender, EventArgs e)
         {
-            pictureBox1.Image = qr.GenerarQR("Nan");
+            qr.RandQR();
+
+            pictureBox1.Image = qr.RandImage;
+            labelCod.Text = qr.RandText;
         }
     }
 }
